@@ -10,9 +10,9 @@
 
 > 当前剩余工作、未解决问题和验证缺口，统一记录在 [REMAINING_WORK.md](REMAINING_WORK.md)。
 
-![工作台暗色 · 蓝黑主题](docs/workbench-dark.png)
+![工作台暗色 · 蓝黑主题](https://cdn.jsdelivr.net/gh/wenbinZ1/code-workshop@main/docs/workbench-dark.png)
 
-![工作台亮色 · 冷蓝主题](docs/workbench-light.png)
+![工作台亮色 · 冷蓝主题](https://cdn.jsdelivr.net/gh/wenbinZ1/code-workshop@main/docs/workbench-light.png)
 
 ## 快速开始
 
