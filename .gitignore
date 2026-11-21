@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.tmp/
+.npm-cache/
+.edge-*/
+.cargo/
+.rustup/
+.toolchain/
+.xwin/
+src-tauri/target/
+*.log
+.DS_Store
+
+# 本地环境与凭据
+.env
+.env.*
+*.pem
+*.key
+
+# 桌面端便携构建产物：请通过 GitHub Releases 分发，不提交二进制
+desktop/

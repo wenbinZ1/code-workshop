@@ -1,0 +1,12 @@
+{
+  "identifier": "default",
+  "description": "Default capability for the main Code Workshop window",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "core:window:allow-close",
+    "core:window:allow-destroy",
+    "sql:default",
+    "sql:allow-execute"
+  ]
+}

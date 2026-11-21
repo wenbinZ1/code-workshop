@@ -1,0 +1,83 @@
+import type { ProjectTemplate } from '@/types';
+
+export const PROJECT_TEMPLATES: ProjectTemplate[] = [
+  {
+    id: 'cli-todo',
+    title: '命令行待办清单',
+    level: 'L1',
+    summary: '把增删改查、文件持久化和用户输入校验串成一个能每天用的小工具。',
+    skills: ['Python 基础', '文件读写', 'CRUD'],
+    stageA: ['实现任务的新增、查看、完成与删除', '把任务保存到本地 JSON 文件', '处理空输入与非法命令'],
+    stageB: ['按优先级排序任务', '用标签过滤任务', '补一组命令行交互测试'],
+  },
+  {
+    id: 'guess-number',
+    title: '猜数字游戏',
+    level: 'L1',
+    summary: '用最小的游戏闭环练习随机数、循环、条件判断与输入校验。',
+    skills: ['循环', '条件分支', '输入校验'],
+    stageA: ['生成 1–100 的随机答案', '限制 7 次机会并提示大小', '输入非数字时给出友好提示'],
+    stageB: ['增加简单 / 普通 / 困难三档难度', '记录并展示最佳成绩', '把成绩写入本地排行榜'],
+  },
+  {
+    id: 'web-notepad',
+    title: '网页记事本',
+    level: 'L2',
+    summary: '做一个打开就能写、关掉不丢内容的轻量记事本。',
+    skills: ['DOM 操作', 'localStorage', 'Markdown'],
+    stageA: ['富文本编辑与字数统计', '自动保存到 localStorage', '支持新建、删除与切换笔记'],
+    stageB: ['全文搜索标题与正文', 'Markdown 预览与导出', '键盘快捷键与空状态'],
+  },
+  {
+    id: 'weather-tool',
+    title: '天气查询工具',
+    level: 'L2',
+    summary: '调用公开 API，把异步请求、加载态、错误态和缓存讲清楚。',
+    skills: ['fetch', '异步', '缓存'],
+    stageA: ['输入城市并调用公开天气 API', '展示温度、天气与未来三天', '处理加载中、失败与空结果'],
+    stageB: ['多城市并排对比', '为查询结果增加 10 分钟缓存', '记住最近查询的城市'],
+  },
+  {
+    id: 'blog-system',
+    title: '个人博客系统',
+    level: 'L3',
+    summary: '从文章 CRUD 走到静态渲染，理解内容系统的数据流。',
+    skills: ['CRUD', '路由', '静态生成'],
+    stageA: ['文章增删改查', 'Markdown 编辑与预览', '按时间倒序展示文章列表'],
+    stageB: ['标签与归档页', '生成静态文章页', '输出 RSS / sitemap'],
+  },
+  {
+    id: 'mini-crawler',
+    title: '简易爬虫',
+    level: 'L3',
+    summary: '抓取、解析、存储、去重与限速，一次把数据采集链路走通。',
+    skills: ['HTTP', '解析', '限速'],
+    stageA: ['抓取单个页面并保存 HTML', '提取标题与正文', '把结果写入 JSONL'],
+    stageB: ['翻页抓取列表', '按 URL 去重', '加入请求间隔与失败重试'],
+  },
+  {
+    id: 'short-link',
+    title: '短链接服务',
+    level: 'L4',
+    summary: '一个最小后端服务：生成、跳转、统计与别名。',
+    skills: ['HTTP 服务', '数据库', '重定向'],
+    stageA: ['接收长链接并生成短码', '访问短码时 302 跳转', '把映射写入 SQLite'],
+    stageB: ['记录访问次数与来源', '支持自定义别名', '增加过期时间与清理任务'],
+  },
+  {
+    id: 'code-runner',
+    title: '在线代码运行器',
+    level: 'L4',
+    summary: '把执行、超时、隔离与结果回显做成一个可用的沙箱闭环。',
+    skills: ['沙箱', '进程', '安全'],
+    stageA: ['提交一段代码并返回 stdout', '设置 5 秒执行超时', '拒绝危险文件与网络访问'],
+    stageB: ['支持 Python / JavaScript 双语言', '每次执行使用独立临时目录', '记录执行耗时与内存峰值'],
+  },
+];
+
+export const PROJECT_LEVEL_LABEL: Record<string, string> = {
+  L1: '入门',
+  L2: '进阶',
+  L3: '综合',
+  L4: '挑战',
+};
